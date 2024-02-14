@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+ul{
+      list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.flexbox-container-2{
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    margin-top: 2%;
+ 
+}
+
+.flexbox-item-21{
+    width: 33vw;
+    height: 10vh;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+}
+
+.flexbox-item-211{
+    width: 25vw;
+    
+}
+
+.flexbox-item-222{
+    width: 75vw;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    margin: 5%;
+    margin-left: 30%;
+    animation: prvaAnimacija 5s ease 3s infinite normal forwards;
+}
+
+@keyframes prvaAnimacija {
+	0% {
+		transform: rotate(0);
+	}
+
+    25%{
+        transform: rotate(50deg);
+    }
+
+    75%{
+        transform: rotate(-50deg);
+    }
+
+	100%{
+        transform: rotate(0);
+    }
+}
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 3;
+    font-size: 500%;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: red;
+    -webkit-text-fill-color: white;    
+    text-shadow: 6px 6px 2px #A3A3A3;
+    z-index: 2;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 15vh;
+}
+
+.flexbox-container{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.flexbox-item{
+    width: 24vw;
+    height: 10vh;
+    border: 4px solid red;
+    background-color: #d8d7d7;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4vw;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: red;
+    -webkit-text-fill-color: white;    
+    text-shadow: 3px 3px 1px #A3A3A3;
+}
+
+.linija{
+    border: 2px solid red;
+    margin-bottom: 2px;
+}
+
+/*.carousel{
+    margin-top: 10vh;
+    border: 2px solid red;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+*/
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    
+}
+
+.carousel-indicators {
+   
+    background-color: black;
+    border: 2px solid red;
+    margin-bottom: 2px;
+    max-width: 20vw;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    height: 1vh;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    height: 1vh;
+    background-color: red;
+    
+}
+
+
+.galerija{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vh;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+.footer-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vh;
+    flex-wrap: nowrap;
+}
+
+.fItem{
+    width: 33vw;
+    height: 20vh;
+    border: 4px solid red;
+    background-color: #d8d7d7;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.f1{
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+}
+
+.f2{
+    flex-direction: row;
+    justify-content:space-evenly;
+    display: flex;
+    align-items: center;
+}
+
+.f3 .mreze{
+    flex-direction: row;
+    justify-content:space-evenly;
+    display: flex;
+    align-items: center;
+    
+}
+
+.f2 img{
+    height: 30%;
+}
+
+.fSlika{
+    width: 25%;
+}
+
+.f3 .mreze .fSlika{
+    width: 40%;
+    
+}
+
+.mreze{
+    margin-left: 5vw;
+}
+.crypto{
+    width: 10%;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4vw;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: red;
+    -webkit-text-fill-color: black;    
+    text-shadow: 3px 3px 1px #A3A3A3;
+}
+
+.karta iframe{
+    width: 90vw;
+    height: 100vh;
+    margin: 2vh 4vw;
+}
+
+.video iframe{
+    width: 90vw;
+    height: 100vh;
+    margin: 2vh 4vw;
+    border: 2px solid red;
+}
+
+.savjetiH3{
+    text-align: center;
+}
+
+
+
+/*RESIZE*/
+
+@media screen and (min-width: 1px){
+    .galerija .card{
+        width: 49vw;
+        border: 2px solid red;
+        margin-bottom: 1vh;
+    }
+}
+
+@media screen and (min-width: 481px){
+    .galerija .card{
+        width: 30vw;
+        border: 2px solid red;
+        margin-bottom: 1vh;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .galerija .card{
+        width: 16vw;
+        border: 2px solid red;
+    }
+}
+
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+*/
+
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif; //naslovi
+*/
